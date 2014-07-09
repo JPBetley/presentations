@@ -1,0 +1,542 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>The Hitchhiker's Guide To Test Driven Development</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet'>
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/entre.css">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				
+
+				<section>
+					<h1>The Hitchhiker's Guide To Test Driven Development</h1>
+					<h4>Entre Computer Services</h4>
+					<h4>John Betley</h4>
+				</section>
+
+
+				<section>
+					<img src="images/dontpanic.jpg" />
+				</section>
+
+
+				<section>
+					<blockquote>
+						We're all still figuring this stuff out.
+					</blockquote>
+				</section>
+
+
+				<section>
+                    <h1>The 3 Phases</h1>
+                    <ul>
+                        <li class="fragment"><strong>Resistence:</strong> Testing? Huh? Why bother?
+                        <li class="fragment"><strong>Overwhelmed:</strong> What the hell do I test?
+                        <li class="fragment"><strong>Evangelist:</strong> How did I get by without this?
+                    </ul>
+                </section>
+
+
+				<section>
+                    <h1>Testing is Hard</h1>
+                    <img src="images/cat-meme.gif" width=600px />
+                </section>
+
+
+                <section>
+                    <h1>Testing Confusion</h1>
+                    <ul>
+                        <li>Mixed best practices</li>
+                        <li>How much to test</li>
+                        <li>Tooling</li>
+                        <li>Jargon. Everyone disagrees.</li>
+                    </ul>
+                </section>
+
+
+                <section>
+                    <blockquote>
+                      <p>
+                        Acceptance, integration, functional, unit, isolated, selenium, system tests, TDD, BDD, etc.
+                      </p>
+                    </blockquote>
+
+                </section>
+
+
+                <section>
+                    <blockquote>
+                      <p>
+                        The most accessible field in science, from the point of view of language, is astrophysics. What do you call spots on the sun? Sunspots. Regions of space you fall into and you don’t come out of? Black holes. Big red stars? Red giants.
+                      </p>
+                    </blockquote>
+                    <p class="author">&mdash; Neil Degrasse Tyson</p>
+                </section>
+
+
+                <section>
+                    <h1>Should You Really Test?</h1>
+                </section>
+
+
+                <section>
+                    <h1>Yes!<br>(...and you already do)</h1>
+                    <h4>How much is up to you, though.</h4>
+                </section>
+
+
+                <section>
+                    <h1>Other Reasons to Test</h1>
+                    <ul>
+                        <li>Absolutely required in some cases.
+                        <li class="fragment">Helps decouple code.
+                        <li class="fragment">Simplifies coding. Red, Green, Refactor, Repeat.
+                        <li class="fragment">Sleep better at night.
+                    </ul>
+                </section>
+
+
+                <section>
+                    <h1>Test Driven Development</h1>
+                    <h4 class="muted">All it means is writing tests first</h4>
+                </section>
+
+
+                <section>
+                    <h2>Why <strong>Test First</strong>?</h2>
+                    <ul>
+                        <li class="fragment">Starts off with coded suite of the requirements</li>
+                        <li class="fragment">Tests are specs!</li>
+                        <li class="fragment">Forces us to think about implementation details</li>
+                        <li class="fragment">Makes tests first-class. A part of the system</li>
+                    </ul>
+                </section>
+
+
+                <section>
+                    <blockquote>The tests are a program that verifies that the system works as specified. But the system is <strong>not</strong> a program that verifies that the tests execute correctly.</blockquote>
+                    <p class="author">&mdash; Robert "Uncle Bob" Martin</p>
+                </section>
+
+
+                <section>
+                    <h2>Suppose one day, all the production code disappeared.</h2>
+                </section>
+
+
+                <section>
+                    <h2>The tests dictate how the application should function.</h2>
+                </section>
+
+
+                <section>
+                    <h1>Pitfall: </h1>
+                    <h2 class="muted">Where Do I Begin?</h2>
+                </section>
+
+
+                <section>
+                	<h2>Tools</h2>
+                    <ul>
+                        <li><strong>MS Test Tools: </strong> Default, built into VS 2012.</li>
+                        <li class="fragment"><strong>Typemock/Moq:</strong> For testing in isolation.</li>
+                        <li class="fragment"><strong>Selenium:</strong> Mimic the user.</li>
+                    </ul>
+                </section>
+
+
+                <section>
+                    <h4 class="muted">Once you've learned the basics of unit testing...</h4>
+                    <h1>Write Acceptance Tests</h1>
+                </section>
+
+
+                <section>
+                    <blockquote>
+                        Think of "acceptance tests" as tests that describe the client's expectations.
+                    </blockquote>
+                </section>
+
+
+                <section>
+                    <blockquote>
+                        "When I visit the login page and fill in my credentials, then I should be sent to the Dashboard."
+                    </blockquote>
+                </section>
+
+                <section>
+	        		<pre  style="width: 100%;"><code class="cs" data-trim>
+[TestMethod]
+public void TestValidLoginRedirectsToDashboard()
+{
+    IWebDriver driver = new PhantomJSDriver();
+    Selenium selenium = new WebDriverBackedSelenium(driver, "http://localhost");
+
+    // Goto the Target website
+    selenium.Open("http://localhost/login");
+    
+    // Fill out and submit form
+    selenium.Type("username", "MyUsername");
+    selenium.Type("password", "MyPassword");
+    selenium.Click("submit");
+    selenium.WaitForPageToLoad("1000");
+
+    // Assert Redirect
+    Assert.AreEqual("http://localhost/dashboard", driver.Url);
+}
+					</code></pre>
+				</section>
+
+
+				<section>
+                    <h1>Be Careful!</h1>
+                    <h4>Acceptance tests are incredibly slow.</h4>
+                </section>
+
+
+                <section>
+                    <blockquote>Should I practice dependency injection?</blockquote>
+                </section>
+
+
+                <section>
+                    <blockquote style="margin:auto !important;"><p>Dependency injection, or as it&#39;s also known, passing arguments.</p></blockquote>
+                    <p class="author">&mdash; Nicholas C. Zakas</p>
+                </section>
+
+
+                <section>
+                    <h1>Yes!</h1>
+                </section>
+
+
+                <section>
+                    <pre><code class="cs" data-trim>
+public MonthlyBilling(MemberRepositoryInterface memberRepository,
+                            BillingInterface billing)
+{
+    this.memberRepository = memberRepository;
+    this.billing = billing;
+}
+                    </code></pre>
+                </section>
+
+
+                <section>
+                    <blockquote>Again, ask yourself if the given class <strong>should be responsible</strong> for a particular task. If not, get it out of there! <strong>The smaller the class, the easier it is to test.</strong>
+                </section>
+
+
+                <section>
+	                <h1>Tip</h1>
+	                <h2 class="muted">Depend Upon Abstractions</h2>
+	            </section>
+
+
+                <section>
+                    <pre><code class="cs" data-trim>
+public void DoThatThingYouDo()
+{
+    var chargeInfo = ['...'];
+
+    var stripe = new StripeBilling(); // gasp!
+    stripe.Charge(chargeInfo);
+}
+
+                    </code></pre>
+				</section>
+
+
+				<section>
+                    <pre><code class="cs" data-trim>
+// better
+public MonthlyBiller(BillingInterface billing)
+{
+    this.billing = billing;
+}
+
+public void DoThatThingYouDo()
+{
+    var chargeInfo = ['...'];
+
+    this.billing.Charge(chargeInfo); // any implementation will do
+}
+
+                    </code></pre>
+                </section>
+
+
+                <section>
+                    <pre><code class="cs" data-trim>
+public class StripeBilling : BillingInterface {
+
+    public void Charge(BillingInfo info)
+    {
+        // ... bill with Stripe
+    }
+
+}
+                    </code></pre>
+
+                    <pre><code class="cs" data-trim>
+public class BrainTreeBilling : BillingInterface {
+
+    public void Charge(BillingInfo info)
+    {
+        // ... bill with BrainTree
+    }
+
+}
+                    </code></pre>
+                </section>
+
+
+                <section>
+                    <h1>Tip:</h1>
+                    <h2>Mock Your Dependencies</h2>
+                </section>
+
+
+                <section>
+                    <blockquote>
+                        <p>"A mock object is nothing more than a bit of test jargon that refers to simulating the behavior of real objects."</p>
+                    </blockquote>
+
+                </section>
+
+
+                <section>
+                    <pre><code class="cs" style="max-height: 800px" data-trim>
+public class MonthlyBilling {
+
+    protected MemberRepositoryInterface memberRepository;
+    protected BillingInterface billing;
+
+    public MonthlyBilling(MemberRepositoryInterface memberRepository,
+                                BillingInterface billing)
+    {
+        this.memberRepository = memberRepository;
+        this.billing = billing;
+    }
+
+    public void Charge()
+    {
+        var members = this.memberRepository.GetActiveMembers();
+
+        foreach (var member in members) {
+            this.billing.Charge(member);
+        }
+    }
+}
+                    </code></pre>
+                </section>
+
+                <section style="width: 100%">
+					<pre style="width: 100%"><code class="cs" style="max-height: 800px; width: 100%;" data-trim>
+[TestMethod]
+public void TestChargesActiveMembersEachMonth()
+{
+    // Mock Dependencies
+    var members = GetTestMembers();
+    var memberRepository = Isolate.Fake.Instance&lt;MemberRepositoryInterface&gt;();
+    Isolate.WhenCalled(() => memberRepository.GetActiveMembers()).WillReturn(members);
+
+    var billing = Isolate.Fake.Instance&lt;BillingInterface&gt;();
+    Isolate.WhenCalled(() => billing.Charge(null)).IgnoreCall();
+
+    // Call function being tested
+    new MonthlyBilling(memberRepository, billing).Charge();
+
+    // Verify behavior
+    int numberOfBillings = Isolate.Verify.GetTimesCalled(() => billing.Charge(null));
+    Assert.AreEqual(members.Count, numberOfBillings);
+    
+    Isolate.Verify.WasCalledWithAnyArguments(() => memberRepository.GetActiveMembers());
+}
+
+                    </code></pre>
+                </section>
+
+
+                <section style="width: 100%">
+                    <pre style="width: 100%"><code class="cs" style="max-height: 800px; width: 100%;" data-trim>
+[TestMethod]
+public void TestChargesActiveMembersEachMonth()
+{
+    var members = GetTestMembers();
+    var memberRepository = MockGetActiveMembers(members);
+
+    var billing = MockBillingCharge();
+
+    new MonthlyBilling(memberRepository, billing).Charge();
+
+    AssertMonthlyBillingBehavior();
+}
+
+                    </code></pre>
+                </section>
+
+
+                <section>
+                    <blockquote><p>"Try not to overuse mocks. Doing so paves the way for tests that are significantly more difficult to understand and maintain. Don't forget that setting expectations on a mock allows implementation details to leak into your tests."</p>
+                    </blockquote>
+                    <p class="author">&mdash; Jeffrey Way</p>
+                </section>
+
+
+                <section>
+                	<h1>Pitfall:</h1>
+                	<h2>What Do I Test?</h2>
+                </section>
+
+
+                <section>
+                	<h2>Start with the business rules!</h2>
+                	<h3>Follow Behavior Driven Development</h3>
+                </section>
+
+
+                <section>
+                	<h1>What is BDD?</h1>
+                </section>
+
+
+                <section>
+                    <h2>BDD is just TDD at its best!</h2>
+                    <h3>All of your tests are written to dictate behavior</h3>
+                </section>
+
+
+                <section>
+                    <h2>Traditional Test</h2>
+                    <ul>
+                        <li class="fragment">Arrange</li>
+                        <li class="fragment">Act</li>
+                        <li class="fragment">Assert</li>
+                    </ul>
+                </section>
+
+
+                <section>
+                    <h2>Behavioral Test</h2>
+                    <ul>
+                        <li class="fragment">Given</li>
+                        <li class="fragment">When</li>
+                        <li class="fragment">Then</li>
+                    </ul>
+                </section>
+
+
+                <section>
+                    <h3>Helps Make Tests Readable</h3>
+                    <p><strong>Given</strong> the user does not have admin rights</p>
+                    <p><strong>When</strong> the user attempts to navigate to the admin section</p>
+                    <p><strong>Then</strong> the user is denied access</p>
+                </section>
+
+
+                <section>
+                    <pre><code class="cs" data-trim>
+[TestMethod]
+public void GivenNonAdminUser_WhenNavigatingToAdminArea_DenyAccess()
+{
+    // This most likely mocks out user retrieval
+    GivenNonAdminUser(); 
+
+    // var result = controller.Index() as ActionResult;
+    NavigateToAdminArea();
+
+    // Assert.AreEqual(401, controller.Response.StatusCode);
+    AssertAccessDenied();
+}
+                    </code></pre>
+                </section>
+
+
+                <section>
+                	<h2>Try it for yourself</h2>
+                </section>
+
+
+                <section>
+                    <h2>Happy Halloween!</h2>
+                    <img src="images/halloween.jpg" />
+                </section>
+
+
+                <section>
+                	<h1>Thanks!</h1>
+                	<img src="images/uncle-bob.jpg" />
+                	<h6 class="muted">Materials, ideas, and philosophies attributed to Kent Beck, "Uncle Bob" Martin, and Jeffrey Way</h6>
+                    <h6 class="muted">Powered by reveal.js</h6>
+                </section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { 
+                        hljs.tabReplace = '    ';
+                        hljs.initHighlightingOnLoad(); 
+                    } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
