@@ -275,6 +275,7 @@
 ###Domain Driven Design
 ###CQRS
 ###Event Sourcing
+###SOLID Principles
 
 ---
 
