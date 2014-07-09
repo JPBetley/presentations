@@ -241,7 +241,7 @@
 
 #New Runtime with HHVM and Hack
 
-^Facebook has created a new, fast PHP runtime engine called the Hip-Hop Virtual Machine, as well as an extension to the PHP language called Hack. These are exciting and interesting new projects that give PHP developers new opportunities to further grow their applications.
+^Facebook has created a new, fast PHP runtime engine called the Hip-Hop Virtual Machine, as well as an extension to the PHP language called Hack. These are exciting and interesting new projects that give PHP developers new opportunities to further grow their applications. It also is helping to push PHP internals along by increasing pressure through a competitor.
 
 ---
 
