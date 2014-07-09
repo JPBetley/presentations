@@ -309,6 +309,16 @@
 
 ---
 
+#Keep Learning
+###TutsPlus
+###PHP The Right Way
+###Laracasts
+###Other Community Devs
+
+^Keep growing your own skills. There are vast amounts of resources out there to keep your skills sharp and up to date. And the best resources out there are other people. Connect with them through social media and github.
+
+---
+
 #Keep Creating Awesome Stuff!
 
 ^PHP wouldn't be around if people weren't interested in using it to create exciting new projects. So go make something!
