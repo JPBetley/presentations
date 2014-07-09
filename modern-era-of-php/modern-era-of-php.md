@@ -124,13 +124,13 @@
 
 ---
 
-# Page Controller Pattern
+##Page Controller Pattern
 
 ^The page controller pattern is probably the way most of us did things back when we started toying around with php. When we needed a new page, we created a new .php file, and someone would navigate to that page in a browser.
 
 ---
 
-# Front Controller Pattern
+## Front Controller Pattern
 
 ^We replaced that with the front controller pattern. This pattern basically gave us the ability to send all requests to a single file - the front controller. And it would handle the requests off to the places we wanted it to go. Now we could keep all of our code hidden from the web server, and only keep the front controller in our public web root.
 
