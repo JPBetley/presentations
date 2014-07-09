@@ -17,15 +17,14 @@
 
 ---
 
+##Rasmus Lerdorf
 ![](images/rasmus.jpg)
-^http://buytaert.net/sites/buytaert.net/files/cache/drupalcon-sunnyvale-2007-rasmus-lerdorf-700x700.jpg
 
 ^Rasmus Lerdorf started PHP in 1994 as a set of CGI binaries written in C. The syntax we know today wasn't introduced until 1998.
 
 ---
 
 ![](images/zend.jpg)
-^http://mayeul.com/uploads/2010/09/zend-php-company.jpg
 
 ^PHP 4 introduced the Zend Engine, which is the engine that is still used today by most PHP applications. It introduced a lot of new features, but it was still a largely procedural language.
 
@@ -37,7 +36,7 @@
 
 ---
 
-###PHP 5 Features
+#PHP 5 Features
 - Standard PHP Library
 - Type hinting
 - Exception Classes
@@ -45,7 +44,7 @@
 
 ---
 
-###PHP 5 Object Model
+#PHP 5 Object Model
 - Classes (abstract) and interfaces
 - Static Methods
 - Magic Methods
@@ -56,14 +55,14 @@
 
 ---
 
-###PHP 5.1
+#PHP 5.1
 - Date library overhaul
 - Performance improvements (carries with each version)
 - PDO enabled by default
 
 ---
 
-###PHP 5.2
+#PHP 5.2
 - Better memory management
 - JSON support
 - Zip extension
@@ -72,20 +71,18 @@
 
 ---
 
-###PHP 5.3
+#PHP 5.3
 - Namespaces
 - Late static binding
 - Lambda and closure support
 - True OOP
 - Syntax additions
 
-^Syntax - ternary operator, __callStatic(), etc
-
-^This is the true start of Modern PHP. With the introduction of the myriad of features introduced in this version, devs were allowed to do much more than before.
+^Syntax - ternary operator, __callStatic(), etc. This is the true start of Modern PHP. With the introduction of the myriad of features introduced in this version, devs were allowed to do much more than before.
 
 ---
 
-###PHP 5.4
+#PHP 5.4
 - Traits
 - New array syntax
 - Built-in web server
@@ -93,7 +90,7 @@
 
 --- 
 
-###PHP 5.5
+#PHP 5.5
 - Zend OPCache
 - Password hashing API
 - Generators
@@ -107,7 +104,7 @@
 
 ---
 
-###Design Patterns
+#Design Patterns
 - Factory
 - Iterator
 - Decorator
@@ -122,7 +119,8 @@
 
 ---
 
-# `__autoload()` Changed Everything
+## `__autoload()`
+## Changed Everything
 
 ---
 
@@ -138,7 +136,7 @@
 
 ---
 
-# Because of this better structure, we came upon...
+## Because of this better structure, we came upon...
 
 ---
 
@@ -152,6 +150,10 @@
 - CakePHP
 - FuelPHP
 - Symfony
+
+---
+
+#Frameworks
 - Laravel
 - Aura
 - Kohana
@@ -163,7 +165,8 @@
 - Wordpress
 - Joomla
 - Drupal
-- 
+
+---
 
 # Problem
 
@@ -171,19 +174,18 @@
 
 ---
 
-# PHP Framework Interoperability Group
+## PHP Framework Interoperability Group
 
 ^FIG was born of a need to create standards for php projects and frameworks. Lots of great things have come out of the PHP-FIG including....
 
 ---
 
-###The PSRs
+#The PSRs
 - PSR-0: Namespacing and autoloading conventions
 - PSR-1: Coding Standard
 - PSR-2: Coding Style Guide
 - PSR-3: Logging Interface
 - PSR-4: Autoloading Enhancements
-- Proposed: HTTP interface
 
 ---
 
@@ -203,20 +205,20 @@
 
 - Guzzle
 - Monolog
-- The PHP League of Extraordinary Packages
 - Dingo/API
 - Twig
 - Doctrine
+- The PHP League of Extraordinary Packages
 
 ---
 
 #Tools Too!
-###Not Just PHP
+##Not Just PHP
 
 ---
 
 #Vagrant
-###Disposable VMs
+##Disposable VMs
 
 ---
 
@@ -228,18 +230,18 @@
 
 ---
 
-###Version Control
+#Version Control
 - Git
 - Mercurial
 - Subversion
 
 ---
 
-#Github and Bitbucket
+##Github and Bitbucket
 
 ---
 
-#New Runtime with HHVM and Hack
+##New Runtime with HHVM and Hack
 
 ^Facebook has created a new, fast PHP runtime engine called the Hip-Hop Virtual Machine, as well as an extension to the PHP language called Hack. These are exciting and interesting new projects that give PHP developers new opportunities to further grow their applications. It also is helping to push PHP internals along by increasing pressure through a competitor.
 
@@ -265,17 +267,17 @@
 
 ---
 
-#Advanced Design Patterns and Architecture
+##Advanced Design Patterns and Architecture
 ^ As our applications become more complex, we begin to realize that our code becomes a big pile of mud if we try to stuff everything into the structure a modern MVC framework gives us. So several prominent community members have been learning and teaching about more advanced design patterns
 
 ---
 
-###Action-Domain-Responder
-###Command-bus Architecture
-###Domain Driven Design
-###CQRS
-###Event Sourcing
-###SOLID Principles
+- Action-Domain-Responder
+- Command-bus Architecture
+- Domain Driven Design
+- CQRS
+- Event Sourcing
+- SOLID Principles
 
 ---
 
@@ -284,36 +286,36 @@
 
 ---
 
-#Internals always needs help
+##Internals always needs help
 
 ^It can sometimes be a hard place to put forth your efforts, but their are a ton of ways to help out, even if you can't code C to write the PHP engine. You can do PHP testing, you can help in the internals mailing list, etc.
 
 ---
 
-#Help with packages (or publish your own)
+##Help with packages (or publish your own)
 
 ^With github and bitbucket, it's super easy to help out on a project. Start small, with either your own small library, or some small bug fixes for projects. Every little bit helps, and many people will be grateful for it.
 
 ---
 
-#Help grow the community
+##Help grow the community
 
 ^Just by being here, you're helping grow the PHP community. You've chosen to be part of one of the growing list of PHP User Groups around the world. This is what I've been trying to accomplish, by starting this group. And you can help out too, I can't do it all on my own.
 
 ---
 
-#Help with newcomers
-##[http://phpmentoring.org/](http://phpmentoring.org/)
+##Help with newcomers
+###[http://phpmentoring.org/](http://phpmentoring.org/)
 
 ^A new initiative to become a mentor for PHP has recently been gaining steam. It's a great way to meet new people, share your experience, grow the community, and enrich the lives of an upcoming PHP developer. 
 
 ---
 
-#Keep Learning
-###TutsPlus
-###PHP The Right Way
-###Laracasts
-###Other Community Devs
+##Keep Learning
+- TutsPlus
+- PHP The Right Way
+- Laracasts
+- Other Community Devs
 
 ^Keep growing your own skills. There are vast amounts of resources out there to keep your skills sharp and up to date. And the best resources out there are other people. Connect with them through social media and github.
 
@@ -334,8 +336,10 @@
 ---
 
 #Credits
+####Slide 4 http://buytaert.net/sites/buytaert.net/files/cache/drupalcon-sunnyvale-2007-rasmus-lerdorf-700x700.jpg
+####Slide 5 http://mayeul.com/uploads/2010/09/zend-php-company.jpg
 
 ---
 
 ###Presentation available at
-###[http://jpbetley.github.io/presentations/modern-era-of-php/](http://jpbetley.github.io/presentations/modern-era-of-php/)
+###[https://jpbetley.github.io/presentations/modern-era-of-php/](https://jpbetley.github.io/presentations/modern-era-of-php/)
