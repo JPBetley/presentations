@@ -104,12 +104,7 @@
 
 ---
 
-#Design Patterns
-- Factory
-- Iterator
-- Decorator
-- Front Controller
-- Model-View-Controller
+![120%](http://2.bp.blogspot.com/-i9hB4VQEs6g/Uf4TfEwWNKI/AAAAAAAAB8s/20WE7yWH7yQ/s630/design-patterns.png)
 
 ---
 
@@ -136,39 +131,39 @@
 
 ---
 
+![fit](images/controllers.jpeg)
+
+---
+
 ## Because of this better structure, we came upon...
 
 ---
 
 # The Rise of the Frameworks
 
----
-
-# Frameworks
-- Zend
-- Codeigniter
-- CakePHP
-- FuelPHP
-- Symfony
+![](https://chrisohara.files.wordpress.com/2011/04/ecosystem_machine1.jpg)
 
 ---
 
-#Frameworks
-- Laravel
-- Aura
-- Kohana
-- Many more!
+![fit](http://blog.templatemonster.com/wp-content/uploads/2014/04/2014.04.28-900x538.jpg)
+
+^Zend, Codeigniter, CakePHP, FuelPHP, Symfony, Laravel, Aura, Kohona, Phalcon, and more!
 
 ---
 
-# CMS Platforms
-- Wordpress
-- Joomla
-- Drupal
+![fit](http://webhostinggeeks.com/blog/wp-content/uploads/2011/09/php-cms.jpg)
+
+^Wordpress, Drupal, Joomla, and tons of others. Has the highest number of cms of any language, at over 80
 
 ---
 
 # Problem
+
+^But now we have a problem...
+
+---
+
+![fit](http://www.penguin.com.au/extras/61/9780670075461/lookinside/1.png)
 
 ^With all of these frameworks, doing things their own way, we encountered a problem. How do we share our code? How do we work together?
 
@@ -190,25 +185,31 @@
 ---
 
 #The PHP Renaissance
+
+![](http://www.edzynda.com/media/rennaissance.jpg)
+
 ^what came out of the PHP-FIG laid the foundations for the current PHP Renaissance, as Cal Evans puts it.
 
 ---
 
 #Composer and Packagist
+
 ^Before, PEAR was the standard for distributing packages and libraries for projects. To me, it didn't work very well. But because of the advent of PSR-0, Jordi Boggiano wrote Composer, which allowed php devs to easily autoload dependent packages and libraries in their applications, much in the same way that gems would in ruby. Jordi also created packagist, which is the repository for all the php packages available through composer.
 
 ---
 
 #Package Proliferation
 
+
 ---
+
+![right 100%](http://thephpleague.com/img/logo.png)
 
 - Guzzle
 - Monolog
 - Dingo/API
 - Twig
 - Doctrine
-- The PHP League of Extraordinary Packages
 
 ---
 
@@ -219,6 +220,8 @@
 
 #Vagrant
 ##Disposable VMs
+
+![](http://upload.wikimedia.org/wikipedia/commons/8/87/Vagrant.png)
 
 ---
 
@@ -235,13 +238,21 @@
 - Mercurial
 - Subversion
 
+![right 100%](http://msysgit.github.io/img/git_logo.png)
+
 ---
 
 ##Github and Bitbucket
 
 ---
 
+![100%](https://www.facebook.com/images/fb_icon_325x325.png)
+
+---
+
 ##New Runtime with HHVM and Hack
+
+![](http://docs.hhvm.com/images/og.png)
 
 ^Facebook has created a new, fast PHP runtime engine called the Hip-Hop Virtual Machine, as well as an extension to the PHP language called Hack. These are exciting and interesting new projects that give PHP developers new opportunities to further grow their applications. It also is helping to push PHP internals along by increasing pressure through a competitor.
 
@@ -254,6 +265,14 @@
 
 #Testing
 ^Over the past several years, a movement to introduce a testing culture has emerged. There are several high-profile developers who are testing evangelists within the community.
+
+---
+
+![150%](http://www.palantir.net/presentations/lsp14-eating-elephpants/assets/chris-hartjes-grumpy-cropped.jpg)
+
+---
+
+![fit](http://static3.businessinsider.com/image/4fba6cf56bb3f7df7800000b-1200/dhh-will-stir-it-up.jpg)
 
 ---
 
@@ -311,11 +330,13 @@
 
 ---
 
-##Keep Learning
+#Keep Learning
 - TutsPlus
 - PHP The Right Way
 - Laracasts
 - Other Community Devs
+
+![right 100%](https://pbs.twimg.com/profile_images/2284174758/v65oai7fxn47qv9nectx.png)
 
 ^Keep growing your own skills. There are vast amounts of resources out there to keep your skills sharp and up to date. And the best resources out there are other people. Connect with them through social media and github.
 
@@ -332,12 +353,6 @@
 ---
 
 ###If anything in this presentation interests you and you'd like to learn more, or you would like to give a presentation at our next meeting, come talk to me!
-
----
-
-#Credits
-####Slide 4 http://buytaert.net/sites/buytaert.net/files/cache/drupalcon-sunnyvale-2007-rasmus-lerdorf-700x700.jpg
-####Slide 5 http://mayeul.com/uploads/2010/09/zend-php-company.jpg
 
 ---
 
