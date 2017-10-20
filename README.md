@@ -15,6 +15,10 @@ Presented to PHPRoc, Rochester's PHP User Group.
 
 Presented to Barcamp Rochester.
 
+<h4><a href="http://jpbetley.github.io/presentations/st-e-cs">Wide World of Computer Science</a></h4>
+
+Presented to St. Elizabeth's Freshman CS students.
+
 
 The only branch is gh-pages. That allows the repository to also act as
 a public website giving access to all the presentations through Github Pages.
